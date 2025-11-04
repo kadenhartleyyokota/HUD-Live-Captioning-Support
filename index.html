@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - HUD Live Captioning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #4099E6 0%, #6699E6 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4099E6 0%, #6699E6 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #4099E6;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .section ul, .section ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .section h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4099E6;
+        }
+
+        .feature-card h3 {
+            color: #4099E6;
+            margin-bottom: 10px;
+        }
+
+        .link-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4099E6 0%, #6699E6 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 10px 10px 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(64, 153, 230, 0.4);
+        }
+
+        .contact-box {
+            background: #f0f7ff;
+            border-left: 4px solid #4099E6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .contact-box a {
+            color: #4099E6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HUD Live Captioning</h1>
+            <p>Support & Help Center</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Welcome</h2>
+                <p>
+                    Thank you for using HUD Live Captioning! This app helps you understand every word of your important conversations 
+                    with real-time captions designed for maximum comprehension.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>📱 Real-Time Transcription</h3>
+                        <p>See words appear instantly as they're spoken with professional accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🚗 Windshield HUD Display</h3>
+                        <p>Mirror-reversed text optimized for windshield reflection while driving.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔒 Privacy-First</h3>
+                        <p>All transcription happens on your device. No cloud processing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💾 Save & Export</h3>
+                        <p>Automatically save conversations with timestamps for later review.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Getting Started</h2>
+                <ol>
+                    <li><strong>Grant Permissions:</strong> Allow microphone and speech recognition access when prompted.</li>
+                    <li><strong>Start a Call:</strong> Begin your phone call or meeting.</li>
+                    <li><strong>Tap "Listen":</strong> Start transcription with one tap.</li>
+                    <li><strong>Read Along:</strong> Watch live captions appear in real-time.</li>
+                    <li><strong>Save:</strong> Conversations are automatically saved when you stop.</li>
+                </ol>
+            </div>
+
+            <div class="section">
+                <h2>Tips for Best Results</h2>
+                <ul>
+                    <li>Use in a quiet environment for best accuracy</li>
+                    <li>Speak clearly and at a moderate pace</li>
+                    <li>Position your phone to capture audio clearly</li>
+                    <li>Adjust brightness for optimal visibility while driving</li>
+                    <li>Use mirror mode when reflecting on windshield</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>Is my data private?</h3>
+                <p>
+                    Yes! All transcription happens on your device using Apple's Speech framework. We don't collect, store, 
+                    or transmit any of your conversation data. Your privacy is our top priority.
+                </p>
+
+                <h3>Does it work offline?</h3>
+                <p>
+                    Yes! The app uses on-device speech recognition, so it works without an internet connection once the 
+                    language model is downloaded.
+                </p>
+
+                <h3>Can I export my conversations?</h3>
+                <p>
+                    Yes! You can export saved conversations as text files from the conversation history in Settings.
+                </p>
+
+                <h3>Why are there duplicates in my transcript?</h3>
+                <p>
+                    The app uses smart deduplication to keep only the longest, most complete version of each sentence. 
+                    If you see duplicates, please update to the latest version.
+                </p>
+
+                <h3>How do I use HUD mode while driving?</h3>
+                <p>
+                    Mount your phone on your dashboard, enable mirror mode, and the text will reflect on your windshield. 
+                    Adjust brightness for optimal visibility.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Legal</h2>
+                <a href="privacy.html" class="link-button">Privacy Policy</a>
+                <a href="terms.html" class="link-button">Terms of Service</a>
+            </div>
+
+            <div class="section">
+                <h2>Contact Support</h2>
+                <div class="contact-box">
+                    <p>
+                        Have questions or need help? We're here to assist you!
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:kadenhartleyokota@gmail.com">kadenhartleyokota@gmail.com</a>
+                    </p>
+                    <p>
+                        We typically respond within 24-48 hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Kaden Hartley-Yokota. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
