@@ -174,8 +174,9 @@
             <div class="section">
                 <h2>Welcome</h2>
                 <p>
-                    Thank you for using HUD Live Captioning! This app helps you understand every word of your important conversations 
-                    with real-time captions designed for maximum comprehension.
+                    Thank you for using HUD Live Captioning! This app provides real-time speech-to-text transcription 
+                    for phone calls, meetings, and audiobooks, with a unique windshield HUD display designed for 
+                    maximum comprehension while driving.
                 </p>
             </div>
 
@@ -184,19 +185,27 @@
                 <div class="feature-grid">
                     <div class="feature-card">
                         <h3>📱 Real-Time Transcription</h3>
-                        <p>See words appear instantly as they're spoken with professional accuracy.</p>
+                        <p>Live speech-to-text using Apple's on-device Speech framework with professional accuracy.</p>
                     </div>
                     <div class="feature-card">
                         <h3>🚗 Windshield HUD Display</h3>
-                        <p>Mirror-reversed text optimized for windshield reflection while driving.</p>
+                        <p>Mirror-reversed text optimized for windshield reflection with OpenDyslexic font for better readability.</p>
                     </div>
                     <div class="feature-card">
                         <h3>🔒 Privacy-First</h3>
-                        <p>All transcription happens on your device. No cloud processing.</p>
+                        <p>All transcription happens on your device. Your conversations never leave your phone.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>☁️ Cloud Sync</h3>
+                        <p>Sync your conversation history across devices using Firebase with Apple Sign-In, Google Sign-In, or Email/Password.</p>
                     </div>
                     <div class="feature-card">
                         <h3>💾 Save & Export</h3>
-                        <p>Automatically save conversations with timestamps for later review.</p>
+                        <p>Automatically save conversations with timestamps and export them as text files.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>♿ Accessibility</h3>
+                        <p>OpenDyslexic font option for users with dyslexia and reading difficulties.</p>
                     </div>
                 </div>
             </div>
@@ -204,12 +213,29 @@
             <div class="section">
                 <h2>Getting Started</h2>
                 <ol>
+                    <li><strong>Sign In:</strong> Create an account using Apple Sign-In, Google Sign-In, or Email/Password (required for cloud sync).</li>
                     <li><strong>Grant Permissions:</strong> Allow microphone and speech recognition access when prompted.</li>
-                    <li><strong>Start a Call:</strong> Begin your phone call or meeting.</li>
-                    <li><strong>Tap "Listen":</strong> Start transcription with one tap.</li>
-                    <li><strong>Read Along:</strong> Watch live captions appear in real-time.</li>
-                    <li><strong>Save:</strong> Conversations are automatically saved when you stop.</li>
+                    <li><strong>Start Listening:</strong> Tap the "Listen" button to begin real-time transcription.</li>
+                    <li><strong>View Captions:</strong> Watch live captions appear in real-time on the main screen.</li>
+                    <li><strong>HUD Mode:</strong> Tap "HUD" to switch to windshield display mode with mirror-reversed text.</li>
+                    <li><strong>Save:</strong> Conversations are automatically saved when you stop listening.</li>
                 </ol>
+            </div>
+
+            <div class="section">
+                <h2>Authentication & Sync</h2>
+                <p>
+                    HUD Live Captioning requires sign-in to provide cloud sync across your devices. You can sign in using:
+                </p>
+                <ul>
+                    <li><strong>Apple Sign-In:</strong> Quick and secure authentication using your Apple ID</li>
+                    <li><strong>Google Sign-In:</strong> Sign in with your Google account</li>
+                    <li><strong>Email/Password:</strong> Create an account with any email address</li>
+                </ul>
+                <p>
+                    Your conversation history, settings, and statistics are automatically synced to Firebase Firestore 
+                    and accessible across all your devices. All data is private to your account and encrypted in transit.
+                </p>
             </div>
 
             <div class="section">
@@ -219,7 +245,9 @@
                     <li>Speak clearly and at a moderate pace</li>
                     <li>Position your phone to capture audio clearly</li>
                     <li>Adjust brightness for optimal visibility while driving</li>
-                    <li>Use mirror mode when reflecting on windshield</li>
+                    <li>Enable mirror mode when reflecting on windshield</li>
+                    <li>Use OpenDyslexic font for improved readability (especially helpful for dyslexia)</li>
+                    <li>Sign in to sync your conversations across devices</li>
                 </ul>
             </div>
 
@@ -228,14 +256,21 @@
                 
                 <h3>Is my data private?</h3>
                 <p>
-                    Yes! All transcription happens on your device using Apple's Speech framework. We don't collect, store, 
-                    or transmit any of your conversation data. Your privacy is our top priority.
+                    Yes! All transcription happens on your device using Apple's Speech framework. We never process your 
+                    audio or transcripts on our servers. Your conversation history is stored in your private Firebase 
+                    account and is only accessible to you. We cannot see or access your conversations.
+                </p>
+
+                <h3>Do I need an account?</h3>
+                <p>
+                    Yes. An account is required to use the app and enables cloud sync of your conversation history 
+                    across devices. You can sign in with Apple, Google, or Email/Password.
                 </p>
 
                 <h3>Does it work offline?</h3>
                 <p>
-                    Yes! The app uses on-device speech recognition, so it works without an internet connection once the 
-                    language model is downloaded.
+                    Yes! The app uses on-device speech recognition, so transcription works without an internet connection 
+                    once the language model is downloaded. However, you need internet to sign in and sync your data.
                 </p>
 
                 <h3>Can I export my conversations?</h3>
@@ -243,16 +278,29 @@
                     Yes! You can export saved conversations as text files from the conversation history in Settings.
                 </p>
 
-                <h3>Why are there duplicates in my transcript?</h3>
+                <h3>What is OpenDyslexic font?</h3>
                 <p>
-                    The app uses smart deduplication to keep only the longest, most complete version of each sentence. 
-                    If you see duplicates, please update to the latest version.
+                    OpenDyslexic is a specially designed font that helps people with dyslexia read more easily. 
+                    The app uses this font in HUD mode for better readability while driving.
                 </p>
 
                 <h3>How do I use HUD mode while driving?</h3>
                 <p>
-                    Mount your phone on your dashboard, enable mirror mode, and the text will reflect on your windshield. 
-                    Adjust brightness for optimal visibility.
+                    Mount your phone on your dashboard, tap "HUD" to enter HUD mode, enable mirror mode, and the text 
+                    will reflect on your windshield. The app uses large OpenDyslexic font for optimal visibility and 
+                    readability. Adjust brightness as needed.
+                </p>
+
+                <h3>What happens if I sign out?</h3>
+                <p>
+                    When you sign out, all local conversation history is cleared from your device for privacy. 
+                    Your data remains safely stored in the cloud and will be restored when you sign back in.
+                </p>
+
+                <h3>Can I delete my account?</h3>
+                <p>
+                    Yes. You can delete your account from Settings. This will permanently delete all your data 
+                    from Firebase and cannot be undone.
                 </p>
             </div>
 
